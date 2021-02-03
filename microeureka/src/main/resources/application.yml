@@ -8,11 +8,13 @@ eureka:
   #  service-url:
    #   defaultZone: http://192.168.1.12:8761/eureka/
   #instance:
-   # lease-renewal-interval-in-seconds: 10    #hostname:  
+   # lease-renewal-interval-in-seconds: 10
+    #hostname:  
   #server:
    # wait-time-in-ms-when-sync-empty: 0
     #enable-self-preservation: true
 
 #ribbon:
   #eureka:
-    #approximateZoneFromHostname: true   # hostname: LAPTOP-OQDQ45DP
+    #approximateZoneFromHostname: true
+   # hostname: LAPTOP-OQDQ45DP

@@ -1,3 +1,9 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream, info, health
+        
 # Discovery Server Access
 eureka:
   client:
@@ -15,4 +21,12 @@ spring:
     password: diosteama-9
   jpa:
     generate-ddl: true
-    
+
+#servicio.catalogo:
+  #ribbon:
+   # EnableZoneAffinity: true
+   # EnableZoneExclusive: false
+   # zoneAffinity:
+     # minAvailableServers: 1
+     # maxLoadPerServer: 0.8
+     # maxBlackOutServersPercentage: 0.6

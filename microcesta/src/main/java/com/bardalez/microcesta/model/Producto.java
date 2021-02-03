@@ -14,6 +14,7 @@ public class Producto {
 	private Integer unidades;
 	private Double precioUnitario;
 	private String descripcion;
+	private String port;
 	
 	public Producto() {}
 
@@ -74,6 +75,13 @@ public class Producto {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	
+
+	public String getPort() {
+		return port;
+	}
+
+	public void setPort(String port) {
+		this.port = port;
+	}
 
 }

@@ -4,13 +4,19 @@ server:
 
 #Discovery Server Access
 eureka:
-  #client:
-    #service-url:
-     # default-zone: http://localhost:8761/eureka/
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
   instance:
     status-page-url-path: /infoCatalogo
     health-check-url-path: /healthCatalogo
     metadata-map:
        app-owner: cedser
        description: test application for the expert course
-           initial-status: OUT_OF_SERVICE
+
+    #prefer-ip-address: true  
+  
+    #initial-status: out-of-service
+#ribbon:
+  #eureka:
+    #approximateZoneFromHostname: true 

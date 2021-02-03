@@ -1,4 +1,4 @@
 spring:
   application:
-    name: servicio.productos
- # cloud:   # config:    #  uri: http://localhost:4444
+    name: servicio.catalogo
+  #cloud:    #config:      #uri: http://localhost:4444

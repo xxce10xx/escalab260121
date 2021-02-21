@@ -9,13 +9,10 @@ package com.bardalez.microproductos.controller;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.bardalez.microproductos.model.Producto;
 import com.bardalez.microproductos.repository.ProductoRepository;
@@ -27,9 +24,6 @@ public class ProductoController
 	@Autowired
 	ProductoRepository productoRepository;
 	
-	@Value("${server.port}")
-	private String puerto;
-	
 	@Autowired
 	private MongoTemplate mongoTemplate;
 
@@ -37,12 +31,6 @@ public class ProductoController
 	public String getHealthCheck()
 	{
 		return "{ \"todoOk\" : true }";
-	}
-	
-	@RequestMapping("/")
-	public String ribbonPing()
-	{
-		return "Ok";
 	}
 
 	@GetMapping("/productos")
@@ -67,16 +55,8 @@ public class ProductoController
 	public Optional<Producto> getProducto(@PathVariable String codigo)
 	{
 		Optional<Producto> prod = productoRepository.findById(codigo);
-		Producto prodTemp = prod.get();
-		prodTemp.setPort(puerto);
 		return prod;
 	}
-	
-//	@GetMapping("/producto/{codigo}")
-//	public ResponseEntity<Producto> getProducto(@PathVariable String codigo)
-//	{
-//		return new ResponseEntity<Producto>(HttpStatus.BAD_REQUEST);
-//	}
 
 	@PutMapping("/producto/{codigo}")
 	public Optional<Producto> updateEmployee(@RequestBody Producto newProducto, @PathVariable String codigo)

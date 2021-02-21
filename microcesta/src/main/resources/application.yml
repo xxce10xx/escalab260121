@@ -12,7 +12,9 @@ eureka:
 
 # HTTP Server
 server:
-  port: 3333   # HTTP (Tomcat) port
+  port: 3333 # HTTP (Tomcat) port
+  
+security:  oauth2:    resource:      user-info-uri: http://localhost:7777/user 
   
 spring:
   datasource:
@@ -21,12 +23,4 @@ spring:
     password: diosteama-9
   jpa:
     generate-ddl: true
-
-#servicio.catalogo:
-  #ribbon:
-   # EnableZoneAffinity: true
-   # EnableZoneExclusive: false
-   # zoneAffinity:
-     # minAvailableServers: 1
-     # maxLoadPerServer: 0.8
-     # maxBlackOutServersPercentage: 0.6
+    

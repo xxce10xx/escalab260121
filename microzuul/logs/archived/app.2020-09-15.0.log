@@ -1,0 +1,27 @@
+2020-09-15 08:53:37,078 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-15 08:53:37,096 WARN org.springframework.boot.actuate.endpoint.EndpointId [restartedMain] Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-09-15 08:53:37,366 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=f149cb58-932e-3c5b-9eb8-ced3291d7a0a
+2020-09-15 08:53:37,697 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7d1f7714] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-15 08:53:38,859 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 6565 (http)
+2020-09-15 08:53:39,431 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 3864 ms
+2020-09-15 08:53:46,932 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2020-09-15 08:53:47,198 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 08:53:47,669 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: 2a395a83-c527-418f-8893-bd4135f390b8
+
+2020-09-15 08:53:48,024 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c7b2b05, org.springframework.security.web.context.SecurityContextPersistenceFilter@752831c2, org.springframework.security.web.header.HeaderWriterFilter@2d9e8b42, org.springframework.web.filter.CorsFilter@14257fb4, org.springframework.security.web.authentication.logout.LogoutFilter@2d622987, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7cb4314, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4eed7993, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ed900fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50677fdd, org.springframework.security.web.session.SessionManagementFilter@2a66c6f0, org.springframework.security.web.access.ExceptionTranslationFilter@2227e939, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ccb7cf8]
+2020-09-15 08:53:48,215 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-09-15 08:53:49,407 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [restartedMain] Starting filter initializer
+2020-09-15 08:53:49,428 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-15 08:53:49,531 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-09-15 08:53:50,930 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application UNKNOWN with eureka with status UP
+2020-09-15 08:53:51,071 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 6565 (http) with context path ''
+2020-09-15 08:53:51,072 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 6565
+2020-09-15 08:54:42,960 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-6565-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-09-15 08:54:42,980 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-6565-exec-1] Completed initialization in 12 ms
+2020-09-15 08:54:45,135 WARN org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices [http-nio-6565-exec-1] Could not fetch user details: class org.springframework.web.client.ResourceAccessException, I/O error on GET request for "http://localhost:9100/user": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-09-15 08:55:37,058 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2020-09-15 08:55:37,068 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(10)-127.0.0.1] Unregistering application UNKNOWN with eureka with status DOWN
+2020-09-15 08:55:37,078 INFO org.springframework.cloud.netflix.zuul.ZuulFilterInitializer [RMI TCP Connection(10)-127.0.0.1] Stopping filter initializer
+2020-09-15 08:55:37,090 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(10)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'

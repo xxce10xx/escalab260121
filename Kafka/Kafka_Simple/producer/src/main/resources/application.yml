@@ -1,0 +1,18 @@
+server: 
+  port: 9000
+
+spring:
+   kafka:
+     consumer:
+        bootstrap-servers: 192.168.1.12:9092
+        group-id: mi_grupo
+        auto-offset-reset: earliest
+        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+        #org.apache.kafka.common.serialization.StringDeserializer
+
+     producer:
+        bootstrap-servers: 192.168.1.12:9092
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer 
+        value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+        #org.apache.kafka.common.serialization.StringSerializer

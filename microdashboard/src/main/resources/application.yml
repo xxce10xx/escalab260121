@@ -1,0 +1,17 @@
+# HTTP Server
+server:
+  port: 5555   # HTTP (Tomcat) port
+  
+eureka:
+  client:
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    
+turbine:
+  aggregator:
+    clusterConfig: SERVICIO.CESTA 
+    #nombre del cluster utilizado para agrupar las instancias de cada uno servicio publicado en Eureka. Debe coincidir con el nombre utilizado en appConfig y estar en mayúsculas
+  appConfig: servicio.cesta
+  #lista de servicios Eureka que Turbine utilizará para localizar las instancia
+  #Si hubiera 2, separas con coma.

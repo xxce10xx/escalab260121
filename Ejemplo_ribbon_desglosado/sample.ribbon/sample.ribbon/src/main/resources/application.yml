@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: user
+
+server:
+  port: 8888
+  
+
+ribbon:
+  eureka:
+    enabled: false
+
+eureka:  client:    register-with-eureka: false

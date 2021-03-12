@@ -1,0 +1,38 @@
+server: 
+  port: 9000
+
+#spring:
+  #kafka:
+    #producer:
+      #value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      
+#spring:
+  #kafka:
+   # producer:
+    #  value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+     # properties:
+     #   spring.json.type.mapping: foo:com.common.Foo1,bar:com.common.Bar1
+     
+#spring:
+    #kafka:
+      #producer:
+        #value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+        #transaction-id-prefix: tx.
+      #consumer:
+        #properties:
+         # isolation.level: read_committed
+         
+spring:
+   kafka:
+     #consumer:
+       # bootstrap-servers: 192.168.1.14:9092
+        #group-id: fooGroup2
+        #auto-offset-reset: earliest
+        #key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+       # value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+
+     producer:
+        bootstrap-servers: 192.168.1.12:9092
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer 
+        value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+        
